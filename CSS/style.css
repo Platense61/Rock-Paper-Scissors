@@ -1,0 +1,57 @@
+body{
+  background-color: #FBE7C6;
+}
+
+nav{
+  width: 100%;
+  text-align: center;
+}
+
+nav p{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2em;
+}
+
+.play-area{
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-container{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin-top: 50px;
+  border: solid;
+}
+
+.select{
+  background-color: transparent;
+  border: none;
+  cursor:pointer;
+}
+
+.select img{
+  height: 300px;
+}
+
+.score-board{
+  width: 45%;
+  margin: auto;
+  border: solid;
+  height: 300px;
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.player-score{
+  display: inline;
+  width: 50%;
+}
+
+.ai-score{
+  display: inline;
+  width: 50%;
+  background-color: red;
+}

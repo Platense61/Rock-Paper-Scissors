@@ -6,10 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rock paper Scissors</title>
     <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    
+    <nav>
+      <p>Rock Paper Scissors</p>
+    </nav>
+    <div class="play-area">
+      <div class="img-container user">
+        <button type="button" name="button" class="select"><img src="Assets\rock.png" alt=""></button>
+        <button type="button" name="button" class="select"><img src="Assets\paper.png" alt=""></button>
+        <button type="button" name="button" class="select"><img src="Assets\scissors.png" alt=""></button>
+      </div>
+
+      <div class="img-container ai">
+        <button type="button" name="button" class="select"><img src="Assets\rock.png" alt=""></button>
+        <button type="button" name="button" class="select"><img src="Assets\paper.png" alt=""></button>
+        <button type="button" name="button" class="select"><img src="Assets\scissors.png" alt=""></button>
+      </div>
+    </div>
+
+    <div class="score-board">
+      <p>Score Board</p>
+      <hr>
+      <div class="player-score">
+        <p>Your Score</p>
+      </div>
+      <div class="ai-score">
+        <p>AI Score</p>
+      </div>
+    </div>
 	<script src="JS/index.js"></script>
   </body>
 </html>
