@@ -31,8 +31,9 @@ nav p{
   cursor:pointer;
 }
 
-.select img{
-  height: 300px;
+.img-icons{
+  height: auto;
+  width: 70%;
 }
 
 .score-board{
@@ -45,13 +46,20 @@ nav p{
   font-family: 'Alfa Slab One', cursive;
 }
 
+.score-wrapper{
+  display: flex;
+}
+
 .player-score{
-  display: inline;
   width: 50%;
+  height: 230px;
+  border-right: solid;
 }
 
 .ai-score{
-  display: inline;
   width: 50%;
-  background-color: red;
+}
+
+.player-score p, .ai-score p{
+  border-bottom: solid;
 }
