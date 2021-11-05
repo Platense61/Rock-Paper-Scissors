@@ -40,7 +40,7 @@ nav p{
   width: 45%;
   margin: auto;
   border: solid;
-  height: 300px;
+  height: 200px;
   margin-top: 50px;
   text-align: center;
   font-family: 'Alfa Slab One', cursive;
@@ -48,18 +48,24 @@ nav p{
 
 .score-wrapper{
   display: flex;
+  justify-content: space-between;
 }
 
 .player-score{
-  width: 50%;
-  height: 230px;
+  width: 40%;
+  height: 200px;
   border-right: solid;
 }
 
 .ai-score{
-  width: 50%;
+  width: 40%;
+  border-left: solid;
 }
 
-.player-score p, .ai-score p{
+.ties{
+  width: 20%;
+}
+
+.borders{
   border-bottom: solid;
 }

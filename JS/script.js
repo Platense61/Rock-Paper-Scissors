@@ -7,3 +7,7 @@
 //(2)remove images hide function
 
 //(3) Write values for score using session storage
+
+function slideShow(){
+  
+}
