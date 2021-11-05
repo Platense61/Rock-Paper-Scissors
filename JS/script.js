@@ -8,6 +8,9 @@
 
 //(3) Write values for score using session storage
 
-function slideShow(){
-  
+function show(id){
+  if(id === document.getElementById('rock').innerHTML)
+    document.getElementById('player-paper').style.visibility = 'hidden';
+    document.getElementById('player-scissors').style.visibility = 'hidden';
+
 }

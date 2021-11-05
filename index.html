@@ -7,6 +7,8 @@
     <title>Rock paper Scissors</title>
     <link rel="stylesheet" href="CSS/style.css">
 
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
@@ -18,9 +20,9 @@
     </nav>
     <div class="play-area">
       <div class="img-container user">
-        <button type="button" name="button" class="select"><img src="Assets\rock.png" alt="" class="img-icons"></button>
-        <button type="button" name="button" class="select"><img src="Assets\paper.png" alt="" class="img-icons"></button>
-        <button type="button" name="button" class="select"><img src="Assets\scissors.png" alt="" class="img-icons"></button>
+        <button type="button" name="button" class="select"><img src="Assets\rock.png" alt="" class="img-icons" id="player-rock" onclick="show(this.id)"></button>
+        <button type="button" name="button" class="select"><img src="Assets\paper.png" alt="" class="img-icons" id="player-paper"></button>
+        <button type="button" name="button" class="select"><img src="Assets\scissors.png" alt="" class="img-icons" id="player-scissors"></button>
       </div>
 
       <div class="img-container ai">
@@ -47,6 +49,6 @@
         </div>
       </div>
     </div>
-	<script src="JS/index.js"></script>
+	<script src="JS\script.js"></script>
   </body>
 </html>
