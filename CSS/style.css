@@ -69,3 +69,11 @@ nav p{
 .borders{
   border-bottom: solid;
 }
+
+.mid{
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  gap: 80px;
+  font-family: 'Alfa Slab One', cursive;
+}

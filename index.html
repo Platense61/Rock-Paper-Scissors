@@ -21,14 +21,19 @@
     <div class="play-area">
       <div class="img-container user">
         <button type="button" name="button" class="select"><img src="Assets\rock.png" alt="" class="img-icons" id="player-rock" onclick="show(this.id)"></button>
-        <button type="button" name="button" class="select"><img src="Assets\paper.png" alt="" class="img-icons" id="player-paper"></button>
-        <button type="button" name="button" class="select"><img src="Assets\scissors.png" alt="" class="img-icons" id="player-scissors"></button>
+        <button type="button" name="button" class="select"><img src="Assets\paper.png" alt="" class="img-icons" id="player-paper" onclick="show(this.id)"></button>
+        <button type="button" name="button" class="select"><img src="Assets\scissors.png" alt="" class="img-icons" id="player-scissors" onclick="show(this.id)"></button>
+      </div>
+
+      <div class="mid">
+        <p id="win-status"></p>
+        <button type="button" name="button" onClick="reset()">Reset</button>
       </div>
 
       <div class="img-container ai">
-        <button type="button" name="button" class="select"><img src="Assets\rock.png" alt="" class="img-icons"></button>
-        <button type="button" name="button" class="select"><img src="Assets\paper.png" alt="" class="img-icons"></button>
-        <button type="button" name="button" class="select"><img src="Assets\scissors.png" alt="" class="img-icons"></button>
+        <button type="button" name="button" class="select"><img src="Assets\rock.png" alt="" class="img-icons" id="ai-rock"></button>
+        <button type="button" name="button" class="select"><img src="Assets\paper.png" alt="" class="img-icons" id="ai-paper"></button>
+        <button type="button" name="button" class="select"><img src="Assets\scissors.png" alt="" class="img-icons" id="ai-scissors"></button>
       </div>
     </div>
 
