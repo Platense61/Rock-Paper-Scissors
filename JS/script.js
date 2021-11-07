@@ -7,7 +7,9 @@
 //(2)remove images hide function
 
 //(3) Write values for score using session storage
-
+var playerTotal = 0;
+var tieTotal = 0;
+var aiTotal = 0;
 function show(id){
   var myRock = document.getElementById("player-rock").id;
   var myPaper = document.getElementById("player-paper").id;
@@ -48,6 +50,8 @@ function show(id){
     if(rand == 0){
       //player ties
       document.getElementById('win-status').innerHTML="Tie!";
+      document.getElementById('tie-score').innerHTML="Tie!";
+      
     }
     else if(rand == 1){
       //player looses
