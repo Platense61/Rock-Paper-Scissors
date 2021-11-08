@@ -7,10 +7,9 @@
 //(2)remove images hide function
 
 //(3) Write values for score using session storage
-var playerTotal = 0;
-var tieTotal = 0;
-var aiTotal = 0;
+
 function show(id){
+  var result;
   var myRock = document.getElementById("player-rock").id;
   var myPaper = document.getElementById("player-paper").id;
   var myScissors = document.getElementById("player-scissors").id;
@@ -50,30 +49,40 @@ function show(id){
     if(rand == 0){
       //player ties
       document.getElementById('win-status').innerHTML="Tie!";
-      document.getElementById('tie-score').innerHTML="Tie!";
-      
+      //document.getElementById('tie-score').innerHTML="Tie!";
+      result = tie;
     }
     else if(rand == 1){
       //player looses
       document.getElementById('win-status').innerHTML="Lost!";
+      result = lost;
+
     }
     else{
       //player wins
       document.getElementById('win-status').innerHTML="Win!";
+      result = win;
+
     }
   }
   else if(id === "player-paper"){
     if(rand == 0){
       //player Wins
       document.getElementById('win-status').innerHTML="Win!";
+      result = win;
+
     }
     else if(rand == 1){
       //tie
       document.getElementById('win-status').innerHTML="Tie!";
+      result = tie;
+
     }
     else{
       //player loses
       document.getElementById('win-status').innerHTML="Lost!";
+      result = lost;
+
     }
   }
   //player chooses scissors
@@ -81,15 +90,33 @@ function show(id){
     if(rand == 0){
       //player looses
       document.getElementById('win-status').innerHTML="lost!";
+      result = lost;
     }
     else if(rand == 1){
       //player won
       document.getElementById('win-status').innerHTML="Win!";
+      result = win;
     }
     else{
       //tie
       document.getElementById('win-status').innerHTML="Tie!";
+      result = tie;
     }
+  }
+
+  let playerTotal = sessionStorage.getItem("playerCount");
+  let aiTotal = sessionStorage.getItem("playerCount");
+  let tieTotal = sessionStorage.getItem("tieCount");
+
+  let pWins = sessionStorage.getItem("winCount", 0);
+  let aiWins = sessionStorage.getItem("aiCount", 0);
+
+  if (result == "win") {
+        pWins++;
+  }
+  else if (pWins == null && aiWins == null) {
+        pWins = 0;
+        aiWins = 0;
   }
 
 }
