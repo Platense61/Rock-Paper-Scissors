@@ -7,8 +7,6 @@
     <title>Rock paper Scissors</title>
     <link rel="stylesheet" href="CSS/style.css">
 
-    </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
@@ -20,40 +18,31 @@
     </nav>
     <div class="play-area">
       <div class="img-container user">
-        <button type="button" name="button" class="select"><img src="Assets\rock.png" alt="" class="img-icons" id="player-rock" onclick="show(this.id)"></button>
-        <button type="button" name="button" class="select"><img src="Assets\paper.png" alt="" class="img-icons" id="player-paper" onclick="show(this.id)"></button>
-        <button type="button" name="button" class="select"><img src="Assets\scissors.png" alt="" class="img-icons" id="player-scissors" onclick="show(this.id)"></button>
-      </div>
-
-      <div class="mid">
-        <p id="win-status"></p>
-        <button type="button" name="button" onClick="reset()">Reset</button>
+        <button type="button" name="button" class="select"><img src="Assets\rock.png" alt="" class="img-icons"></button>
+        <button type="button" name="button" class="select"><img src="Assets\paper.png" alt="" class="img-icons"></button>
+        <button type="button" name="button" class="select"><img src="Assets\scissors.png" alt="" class="img-icons"></button>
       </div>
 
       <div class="img-container ai">
-        <button type="button" name="button" class="select"><img src="Assets\rock.png" alt="" class="img-icons" id="ai-rock"></button>
-        <button type="button" name="button" class="select"><img src="Assets\paper.png" alt="" class="img-icons" id="ai-paper"></button>
-        <button type="button" name="button" class="select"><img src="Assets\scissors.png" alt="" class="img-icons" id="ai-scissors"></button>
+        <button type="button" name="button" class="select"><img src="Assets\rock.png" alt="" class="img-icons"></button>
+        <button type="button" name="button" class="select"><img src="Assets\paper.png" alt="" class="img-icons"></button>
+        <button type="button" name="button" class="select"><img src="Assets\scissors.png" alt="" class="img-icons"></button>
       </div>
     </div>
 
-    <p>Score Board</p>
+    <p>Score</p>
     <div class="score-board">
+      <p>Score Board</p>
+      <hr>
       <div class="score-wrapper">
         <div class="player-score">
-          <p class="borders">Your Wins</p>
-          <p id="player-score">0</p>
-        </div>
-        <div class="ties">
-          <p class="borders">Ties</p>
-          <p id="tie-score">0</p>
+          <p>Your Score</p>
         </div>
         <div class="ai-score">
-          <p class="borders">AI Wins</p>
-          <p id="ai-score">0</p>
+          <p>AI Score</p>
         </div>
       </div>
     </div>
-	<script src="JS\script.js"></script>
+	<script src="JS/index.js"></script>
   </body>
 </html>

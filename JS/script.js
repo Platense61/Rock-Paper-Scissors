@@ -50,18 +50,18 @@ function show(id){
       //player ties
       document.getElementById('win-status').innerHTML="Tie!";
       //document.getElementById('tie-score').innerHTML="Tie!";
-      result = tie;
+      result = "tie";
     }
     else if(rand == 1){
       //player looses
       document.getElementById('win-status').innerHTML="Lost!";
-      result = lost;
+      result = "lost";
 
     }
     else{
       //player wins
       document.getElementById('win-status').innerHTML="Win!";
-      result = win;
+      result = "win";
 
     }
   }
@@ -69,19 +69,19 @@ function show(id){
     if(rand == 0){
       //player Wins
       document.getElementById('win-status').innerHTML="Win!";
-      result = win;
+      result = "win";
 
     }
     else if(rand == 1){
       //tie
       document.getElementById('win-status').innerHTML="Tie!";
-      result = tie;
+      result = "tie";
 
     }
     else{
       //player loses
       document.getElementById('win-status').innerHTML="Lost!";
-      result = lost;
+      result = "lost";
 
     }
   }
@@ -90,45 +90,60 @@ function show(id){
     if(rand == 0){
       //player looses
       document.getElementById('win-status').innerHTML="lost!";
-      result = lost;
+      result = "lost";
     }
     else if(rand == 1){
       //player won
       document.getElementById('win-status').innerHTML="Win!";
-      result = win;
+      result = "win";
     }
     else{
       //tie
       document.getElementById('win-status').innerHTML="Tie!";
-      result = tie;
+      result = "tie";
     }
   }
 
-  let playerTotal = sessionStorage.getItem("playerCount");
-  let aiTotal = sessionStorage.getItem("playerCount");
-  let tieTotal = sessionStorage.getItem("tieCount");
-
-  let pWins = sessionStorage.getItem("winCount", 0);
+  let pWins = sessionStorage.getItem("pCount", 0);
   let aiWins = sessionStorage.getItem("aiCount", 0);
-
+  let tieWins = sessionStorage.getItem("tieCount", 0);
   if (result == "win") {
         pWins++;
   }
-  else if (pWins == null && aiWins == null) {
+  else if (pWins == null && aiWins == null && tieWins == null) {
         pWins = 0;
         aiWins = 0;
+        tieWins = 0;
   }
+  else if(result == "tie"){
+    tieWins++;
+  }
+  else{
+    aiWins++;
+  }
+  sessionStorage.setItem("pCount", pWins);
+  sessionStorage.setItem("aiCount", aiWins);
+  sessionStorage.setItem("tieCount", tieWins);
+
+  document.getElementById('player-score').innerHTML = sessionStorage.getItem("pCount");
+  document.getElementById('ai-score').innerHTML = sessionStorage.getItem("aiCount");
+  document.getElementById('tie-score').innerHTML = sessionStorage.getItem("tieCount");
+
+  console.log(pWins);
+
+
 
 }
 
 function reset(){
-  document.getElementById('ai-rock').style.visibility = 'visible';
-  document.getElementById('ai-paper').style.visibility = 'visible';
-  document.getElementById('ai-scissors').style.visibility = 'visible';
-  document.getElementById('player-rock').style.visibility = 'visible';
-  document.getElementById('player-paper').style.visibility = 'visible';
-  document.getElementById('player-scissors').style.visibility = 'visible';
-  document.getElementById('win-status').innerHTML=" ";
+  // document.getElementById('ai-rock').style.visibility = 'visible';
+  // document.getElementById('ai-paper').style.visibility = 'visible';
+  // document.getElementById('ai-scissors').style.visibility = 'visible';
+  // document.getElementById('player-rock').style.visibility = 'visible';
+  // document.getElementById('player-paper').style.visibility = 'visible';
+  // document.getElementById('player-scissors').style.visibility = 'visible';
+  // document.getElementById('win-status').innerHTML=" ";
+
 
 
 }
