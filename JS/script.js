@@ -136,13 +136,13 @@ function show(id){
 }
 
 function reset(){
-  // document.getElementById('ai-rock').style.visibility = 'visible';
-  // document.getElementById('ai-paper').style.visibility = 'visible';
-  // document.getElementById('ai-scissors').style.visibility = 'visible';
-  // document.getElementById('player-rock').style.visibility = 'visible';
-  // document.getElementById('player-paper').style.visibility = 'visible';
-  // document.getElementById('player-scissors').style.visibility = 'visible';
-  // document.getElementById('win-status').innerHTML=" ";
+  document.getElementById('ai-rock').style.visibility = 'visible';
+  document.getElementById('ai-paper').style.visibility = 'visible';
+  document.getElementById('ai-scissors').style.visibility = 'visible';
+  document.getElementById('player-rock').style.visibility = 'visible';
+  document.getElementById('player-paper').style.visibility = 'visible';
+  document.getElementById('player-scissors').style.visibility = 'visible';
+  document.getElementById('win-status').innerHTML=" ";
 
 
 
