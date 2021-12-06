@@ -143,7 +143,4 @@ function reset(){
   document.getElementById('player-paper').style.visibility = 'visible';
   document.getElementById('player-scissors').style.visibility = 'visible';
   document.getElementById('win-status').innerHTML=" ";
-
-
-
 }

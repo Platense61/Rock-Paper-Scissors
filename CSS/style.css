@@ -12,6 +12,16 @@ nav p{
   font-size: 2em;
 }
 
+.labels{
+  font-family: 'Alfa Slab One', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  margin-bottom: -35px;
+}
+
 .play-area{
   display: flex;
   justify-content: space-between;
@@ -76,4 +86,26 @@ nav p{
   margin-top: 70px;
   gap: 80px;
   font-family: 'Alfa Slab One', cursive;
+  align-items: center;
+}
+
+/* mid button styling */
+
+.example_b {
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #60a3bc;
+	padding: 20px;
+	border-radius: 50px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+}
+
+.example_b:hover {
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
 }

@@ -16,6 +16,16 @@
     <nav>
       <p>Rock Paper Scissors</p>
     </nav>
+
+    <div class="labels">
+
+      <div class="">
+        <p>Player Area</p>
+      </div>
+      <div class="">
+        <p>AI Area</p>
+      </div>
+    </div>
     <div class="play-area">
       <div class="img-container user">
         <button type="button" name="button" class="select"><img src="Assets\rock.png" alt="" class="img-icons" id="player-rock" onclick="show(this.id)"></button>
@@ -25,7 +35,7 @@
 
       <div class="mid">
         <p id="win-status"></p>
-        <button type="button" name="button" onClick="reset()">Reset</button>
+        <div class="button_cont" align="center"><a class="example_b" href="#"  rel="nofollow noopener noreferrer" draggable="false" onClick="reset()">Play Again</a></div>
       </div>
 
       <div class="img-container ai">
@@ -35,7 +45,6 @@
       </div>
     </div>
 
-    <p>Score</p>
     <div class="score-board">
       <div class="score-wrapper">
         <div class="player-score">
